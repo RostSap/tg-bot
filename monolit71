@@ -1,0 +1,15 @@
+const Telegraf = require('telegraf')
+
+const bot = new Telegraf(process.env.Done! Congratulations on your new bot. You will find it at t.me/monolit_71_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+
+Use this token to access the HTTP API:
+5605529514:AAGx7D2U_--18JPZwaHACptEX_JGIC33PAQ
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+)
+bot.start((ctx) => ctx.reply('Welcome!'))
+bot.help((ctx) => ctx.reply('Send me a sticker'))
+bot.on('sticker', (ctx) => ctx.reply(''))
+bot.hears('hi', (ctx) => ctx.reply('Hey there'))
+bot.launch()
